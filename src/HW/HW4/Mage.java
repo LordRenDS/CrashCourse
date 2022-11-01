@@ -1,4 +1,4 @@
-package HW4;
+package HW.HW4;
 
 public class Mage extends Hero {
     protected int damage = 35;

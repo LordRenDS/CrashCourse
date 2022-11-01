@@ -1,4 +1,4 @@
-package HW4;
+package HW.HW4;
 
 public class Slime extends Enemy{
     private int damage = 30;

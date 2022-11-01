@@ -1,4 +1,4 @@
-package HW4;
+package HW.HW4;
 
 public class TrainingGround {
     public static void main(String[] args) {

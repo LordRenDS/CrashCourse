@@ -1,4 +1,4 @@
-package HW4;
+package HW.HW4;
 
 public class Warrior extends Hero {
     private int damage = 50;

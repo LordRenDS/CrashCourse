@@ -1,4 +1,4 @@
-package HW4;
+package HW.HW4;
 
 public class Archer extends Hero {
     protected int damage = 20;

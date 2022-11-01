@@ -1,35 +1,33 @@
-package HW4;
+package HW.HW4;
 
-public abstract class Hero implements Mortal {
-    private String name;
+public abstract class Enemy implements Mortal {
     private int health;
 
-    public Hero(String name, int health) {
-        this.name = name;
+    public Enemy(int health) {
         this.health = health;
-    }
-
-    public String getName() {
-        return name;
     }
 
     public int getHealth() {
         return health;
     }
 
+    public void setHealth(int health) {
+        this.health = health;
+    }
+
+    public abstract void attackHero(Hero hero);
+
     public void takeDamage(int dmg) {
         if (isAlive()) {
             health = health - dmg;
             if (health <= 0) {
                 health = 0;
-                System.out.println("Hero is already dead");
+                System.out.println("Enemy is already dead");
             }
         } else {
-            System.out.println("Hero is already dead");
+            System.out.println("Enemy is already dead");
         }
     }
-
-    public abstract void attackEnemy(Enemy enemy);
 
     @Override
     public boolean isAlive() {
